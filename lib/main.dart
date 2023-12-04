@@ -29,22 +29,178 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text("Facebook"),
+          backgroundColor: Colors.blue,
+          title: const Text(
+            "Facebook",
+            style: TextStyle(
+                color: Colors.white, fontSize: 30, fontWeight: FontWeight.w800),
+          ),
+          centerTitle: true,
+          actions: const [
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: Icon(Icons.facebook, size: 30, color: Colors.white),
+            ),
+            Padding(
+              padding: EdgeInsets.all(2),
+              child: CircleAvatar(
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage("image/profile.png"),
+              ),
+            )
+          ],
       ),
       drawer: const Drawer(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
       ),
-      body: Container(
-        color: Colors.black,
-        child:const Center(
-          child: Text(
-            "hello world",
-            style: TextStyle(
-                color: Colors.red, fontSize: 50.5, fontWeight: FontWeight.w500),
+      body: SizedBox(
+          child:SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 100,
+                  color: Colors.red,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.all(5),
+                          width: 100,
+                          height: 100,
+                          color: Colors.white,
+                          child: Image.asset("image/profile.png",fit: BoxFit.fill,),
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(5),
+                          width: 100,
+                          height: 100,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(5),
+                          width: 100,
+                          height: 100,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(5),
+                          width: 100,
+                          height: 100,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(5),
+                          width: 100,
+                          height: 100,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(5),
+                          width: 100,
+                          height: 100,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(5),
+                          width: 100,
+                          height: 100,
+                          color: Colors.white,
+                        ),
+                      ],
+                    ),
+                  ),
+
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 500,
+                  height: 50,
+                  color: Colors.red,
+                ),
+              ],
+            ),
+          ) ,
           ),
-        )
-      ),
     );
   }
 }
